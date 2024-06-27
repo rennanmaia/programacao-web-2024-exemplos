@@ -10,6 +10,6 @@ Navegue nas pastas e descubra o que há de novo, quais os métodos e as formas d
 Você pode utilizar duas formas para navegar:
 
 1. Utilizando o [código fonte do projeto](https://github.com/rennanmaia/programacao-web-2024-exemplos)
-2. Utilizando a [página de projetos](http://127.0.0.1:5500/index.html)
+2. Utilizando a [página de projetos](https://rennanmaia.github.io/programacao-web-2024-exemplos/)
 
 Além disso, é possível acessar guia prático para a disciplina de Programação Web 2024.1 localizado [aqui](https://github.com/rennanmaia/programacao-web-2024).
