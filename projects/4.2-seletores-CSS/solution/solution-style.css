@@ -7,27 +7,27 @@ ol {
 
 /* Write your CSS below, don't change the rules above. */
 
-/* TODO 1: Set the CSS for all paragraph tags to "color: red;" */
+/*  Tarefa 1: Defina o CSS par atodos as tags parágrafo para "color: red" */
 p {
   color: red;
 }
 
-/* TODO 2: Set the CSS for all elements with a class of "note" to "font-size: 20px;" */
+/* Tarefa 2: Defina o CSS para todos os elementos com a classe "note" para "font-size: 20px" */
 .note {
   font-size: 20px;
 }
 
-/* TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green;" */
+/* Tarefa 3: Defina o CSS para o elemento com o atributo "id" com o valor "id-selector-demo" para "color: green" */
 #id-selector-demo {
   color: green;
 }
 
-/* TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue;" */
+/* Tarefa 4: Defina o CSS para os elementos li que tem o atributo "value" com o valor "4" para ter "color: blue" */
 li[value="4"] {
   color: blue;
 }
 
-/* TODO 5: Set all elements to have "font-family: sans-serif;" */
+/* Tarefa 5: Defina para todos os elementos ter "text-align: center" */
 * {
   text-align: center;
 }
