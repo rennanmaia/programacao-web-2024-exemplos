@@ -4,7 +4,6 @@ ol {
   list-style-position: inside;
 }
 
-
 /* Write your CSS below, don't change the rules above. */
 
 /*  Tarefa 1: Defina o CSS par atodos as tags parágrafo para "color: red" */
@@ -17,9 +16,17 @@ p {
   font-size: 20px;
 }
 
+.note2 {
+  font-size: 30px;
+}
+
+.note2 p {
+  color: blue;
+}
+
 /* Tarefa 3: Defina o CSS para o elemento com o atributo "id" com o valor "id-selector-demo" para "color: green" */
 #id-selector-demo {
-  color: green;
+  color: yellow;
 }
 
 /* Tarefa 4: Defina o CSS para os elementos li que tem o atributo "value" com o valor "4" para ter "color: blue" */

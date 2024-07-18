@@ -4,11 +4,11 @@ img {
 }
 
 .color-title {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 #red {
-  color: red;
+  color: lime;
 }
 
 #blue {
