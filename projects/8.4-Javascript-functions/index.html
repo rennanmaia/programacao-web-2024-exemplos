@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript functions</title>
+</head>
+<body>
+
+<!--         
+    
+    - Functions    
+        * Declaration
+        * Expression
+        * Parameters
+        * Arguments
+        * Return
+
+    Reference: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_textarea_get
+
+     -->
+
+     
+     <h3>Uma demonstração para o elemento TEXTAREA</h3>
+     
+     Texto a publicar:<br>
+     <textarea id="newText" 
+        placeholder="Digite aqui seu tweet" 
+        cols="50" 
+        rows="3"
+        onkeypress="catchText()"
+        maxlength="140"
+    ></textarea>
+     
+     <p>Clique no botão abaixo para pegar o texto do textarea.</p>
+     
+     <button type="button" onclick="catchText()">Pegar texto</button>
+     
+     <p id="charDescription"></p>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
