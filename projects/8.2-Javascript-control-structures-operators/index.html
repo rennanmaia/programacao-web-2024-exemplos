@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Control Structures and Operators</title>
+</head>
+<body>
+
+<!-- 
+    - Control Structures
+        * If-else
+
+    - Operators
+        * Arithmetic
+        * Comparison
+        * Logical
+        * Conditional
+-->
+
+
+<script>
+
+    // Operators
+
+    // Arithmetic
+    let x = 10;
+    let y = 5;
+    console.log(x + y);
+
+    // Comparison
+    console.log(x > y);
+
+    // Logical
+    console.log(x > 0 && y > 0);
+
+    // Conditional
+    console.log(x > 0 ? "x é maior que 0" : "x é menor que 0"); 
+
+    // If-else Control Structure
+    let majorityAge = 18;
+    let age = prompt("Quantos anos você tem?");
+
+    if (age >= majorityAge) {
+        alert("Pode entrar");
+        console.log("Pode entrar");
+    } else {
+        alert("Não pode entrar! O conteúdo é somente para adultos.");
+        console.log("Não pode entrar! O conteúdo é somente para adultos.");
+    }
+
+    // 
+    let isBoss = confirm("Você é o chefe?");
+
+    if (isBoss) {
+        alert("Pode entrar");
+        console.log("Pode entrar");
+    } else {
+        alert("Você não pode entrar porque não é o chefe.");
+        console.log("Você não pode entrar porque não é o chefe.");
+    }
+
+    // Associating if-else with operators
+    if ( (age >= majorityAge) && (isBoss) ) {
+        alert("Pode entrar");
+        console.log("Pode entrar");
+    } else {
+        alert("Não pode entrar! O conteúdo é somente para adultos e ou você não é o chefe.");
+    }
+
+
+</script>
+
+    
+</body>
+</html>
