@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Array and Loops</title>
+</head>
+<body>
+
+<!-- 
+    
+    - Array
+
+    - Loops
+        * For
+        * While
+
+-->
+
+<script>
+
+    let arr = [1, 2, 3, 4, 5];
+    console.log(arr);
+
+    arr.push(6);
+    console.log(arr);
+
+    // let students = Array(20);
+    // var series = [];
+    // students[0] = 'Paulo';
+    
+    let students = ['Wesley', 'Marina', 'Bruno', 'Paula'];
+    var series = ['Game of Thrones', 'Friends', 'Vikings'];
+    
+    //  Verify if the variable is an Array
+    console.log(Array.isArray(students));
+    console.log(students[2]);
+
+    students[2] = 'Gabriel';
+    console.log(students);
+
+    students.push("Marcos");
+    console.log(students);
+
+    // Type of element in Array
+    let array = [1, 'Paulo', 2, 'Marina', 3, 'Bruna'];
+    console.log(typeof array[0]);
+    console.log(typeof array[1]);
+
+    // LOOPS
+
+    // forEach
+    students.forEach(function (item, index) {
+        console.log(item, index);
+    })
+
+    // For
+    for (let i = 0; i < students.length; i++) {
+        console.log(i + ' - ' + students[i]);
+    }
+
+    // While
+    let i = 0;
+    while (i < students.length) {
+        console.log(i + " * " + students[i]);
+        i++;
+    }
+
+    let marinasPosition = students.indexOf('Gabriel');
+    console.log("A posição de Gabriel no Array é: " + marinasPosition);
+
+</script>
+
+</body>
+</html>
