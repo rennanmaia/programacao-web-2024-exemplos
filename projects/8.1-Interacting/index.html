@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacting with webpages</title>
+</head>
+<body>
+
+<!-- 
+    - Prompt
+    - Alert
+    - Confirm
+ -->
+
+    <script>
+
+/*
+        alert("Hello World!");
+
+        let age = prompt('Quantos anos você tem?', 100);
+
+        console.log("Você tem " + age + " anos!");
+        alert(`Você tem ${age} anos!`);
+
+        let isBoss = confirm("Você é o chefe?");
+        alert(isBoss); // true if OK is pressed, otherwise false
+
+*/
+
+        // Example 2: Tweet
+
+        let tweet = prompt("O que você está pensando agora?");
+        let tweetCharCount = tweet.length;
+        let remaingChars = 140 - tweetCharCount;
+
+        
+        alert(`O tweet tem ${tweetCharCount} caracteres.`);
+
+        alert(
+            "O tweet tem "  + tweetCharCount + " caracteres. Restam " + 
+            remaingChars + " para o fim do tweet."
+        );
+
+
+
+    </script>
+    
+</body>
+</html>
