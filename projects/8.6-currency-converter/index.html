@@ -6,15 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    Real-time Secure JSON API
-    fastforex.io
-    api_key: bd6c24ec1b-b8ea5ef81b-sh5h9z
+    <h1>Conversor de moedas</h1>
 
-    https://api.fastforex.io/fetch-multi?api_key=bd6c24ec1b-b8ea5ef81b-sh5h9z&base=USD&to=BRL,CAD,EUR
+    <div>
+        <fieldset>
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount">
+        </fieldset>
 
-    https://api.fastforex.io/fetch-all?api_key=bd6c24ec1b-b8ea5ef81b-sh5h9z&base=USD
+        <fieldset>
+            <label for="currency">Converter de:</label>
+            <select name="currency" id="currency">
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="BRL">Real</option>
+            </select>
+        </fieldset>
 
-    https://api.fastforex.io/fetch-all?api_key=bd6c24ec1b-b8ea5ef81b-sh5h9z&base=USD
+        <fieldset>
+            <label for="currency2">Converter para:</label>
+            <select name="currency2" id="currency2">
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="BRL">Real</option>
+            </select>
+        </fieldset>
+
+        <button onclick="convert()">Converter</button>
+
+
+    </div>
 
 </body>
 </html>
