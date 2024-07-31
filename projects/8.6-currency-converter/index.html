@@ -15,24 +15,22 @@
         </fieldset>
 
         <fieldset>
-            <label for="currency">Converter de:</label>
-            <select name="currency" id="currency">
-                <option value="USD">Dólar</option>
-                <option value="EUR">Euro</option>
-                <option value="BRL">Real</option>
+            <label for="currencyFrom">Converter de:</label>
+            <select name="currencyFrom" id="currencyFrom">
+                <option value="USD">Clique em listar moedas</option>
             </select>
         </fieldset>
 
         <fieldset>
-            <label for="currency2">Converter para:</label>
-            <select name="currency2" id="currency2">
-                <option value="USD">Dólar</option>
-                <option value="EUR">Euro</option>
-                <option value="BRL">Real</option>
+            <label for="currencyTo">Converter para:</label>
+            <select name="currencyTo" id="currencyTo">
+                <option value="USD">Clique em listar moedas</option>
             </select>
         </fieldset>
 
-        <button onclick="getCurrencies()">Listar moedas</button>
+        <!-- <button onclick="getCurrencies()">Listar moedas</button> -->
+        <button onclick="loadCurrencies()">Listar moedas</button>
+        <button onclick="loadCurrencyRates()">Pegar taxas</button>
         <button onclick="convert()">Converter</button>
 
 
