@@ -23,16 +23,21 @@
 
         <fieldset>
             <label for="currencyTo">Converter para:</label>
-            <select name="currencyTo" id="currencyTo">
+            <select name="currencyTo" id="currencyTo" onchange="alert(this.value)">
                 <option value="USD">Clique em listar moedas</option>
             </select>
         </fieldset>
 
-        <!-- <button onclick="getCurrencies()">Listar moedas</button> -->
+        <fieldset>
+            <label for="convertedAmount">Resultado: </label>
+            <input type="input" id="convertedAmount" readonly>
+        </fieldset>
+
+        <div id="message"></div>
+
         <button onclick="loadCurrencies()">Listar moedas</button>
         <button onclick="loadCurrencyRates()">Pegar taxas</button>
-        <button onclick="convert()">Converter</button>
-
+        <button onclick="convertCurrency()">Converter</button>
 
     </div>
 
