@@ -2,7 +2,7 @@
 
 async function getCurrencies() {
     
-    let apiKey = "bd6c24ec1b-b8ea5ef81b-sh5h9z";
+    let apiKey = "8063a6ac4a-a5ba671794-shil9g";
     let route = "/currencies";
     let endpoint = "https://api.fastforex.io";
     let url = endpoint + route + "?api_key=" + apiKey;
@@ -21,7 +21,7 @@ async function getCurrencies() {
 }
 
 async function getCurrencyRate(from) {
-    let apiKey = "bd6c24ec1b-b8ea5ef81b-sh5h9z";
+    let apiKey = "8063a6ac4a-a5ba671794-shil9g";
     let route = "/fetch-all/";
     let endpoint = "https://api.fastforex.io";
     let url = endpoint + route + "?api_key=" + apiKey + "&from=" + from ;

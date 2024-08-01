@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 420px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    width: 100%;
+    text-align: center;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+}
+
+header .logo-description {
+    margin: 0;
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main fieldset {
+    border: 0;
+}
+
+main .field-amount {
+    width: 100%;
+}
+
+main .field-currency-from {
+    width: 100%;
+}
+
+main .field-currency-to {
+    width:100%;
+}
+
+main .field-converted-amount {
+    width: 100%;
+}
+
+main fieldset label {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.input-format {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.button-area button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 30px;
+    border: 1px solid #ccc;
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+.button-area .list-button {
+    background-color:rgb(182, 189, 241);
+}
+
+.rate-button {
+    background-color:rgb(235, 187, 98);
+}
+
+.convert-button {
+    background-color: rgb(91, 243, 111);
+}
+
+#convertedAmount {
+    background-color: rgb(82, 85, 77);
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 640px) {
+    .button-area .list-button {
+        width: 40%;
+    }
+
+    .button-area .rate-button {
+        width: 40%;
+    }
+
+    main .field-currency-from {
+        width: 50%;
+    }
+    
+    main .field-currency-to {
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .button-area .list-button {
+        width: 25%;
+    }
+
+    .button-area .rate-button {
+        width: 25%;
+    }
+
+    .button-area .convert-button {
+        width: 25%;
+    }
+
+    main .field-amount {
+        width: 33%;
+    }
+
+    main .field-currency-from {
+        width: 33%;
+    }
+    
+    main .field-currency-to {
+        width: 33%;
+    }
+    
+}

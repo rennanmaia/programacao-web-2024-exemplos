@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFOPA - Conversor de modeas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Conversor de moedas</h1>
 
-    <div>
-        <fieldset>
+    <header>
+        <div class="header-logo">
+            <img class="logo" src="assets/ufopa-logo.png" alt="logo UFOPA">
+            <p class="logo-description">Universidade Federal do Oeste do Pará</p>
+        </div>
+        <h1>Conversor de moedas</h1>
+    </header>
+
+    <main>
+        <fieldset class="field-amount">
             <label for="amount">Valor:</label>
-            <input type="number" id="amount">
+            <input type="text" id="amount" class="input-format" />
         </fieldset>
 
-        <fieldset>
+        <fieldset class="field-currency-from">
             <label for="currencyFrom">Converter de:</label>
-            <select name="currencyFrom" id="currencyFrom">
+            <select name="currencyFrom" id="currencyFrom" class="input-format">
                 <option value="USD">Clique em listar moedas</option>
             </select>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="field-currency-to">
             <label for="currencyTo">Converter para:</label>
-            <select name="currencyTo" id="currencyTo" onchange="alert(this.value)">
+            <select name="currencyTo" id="currencyTo" class="input-format">
                 <option value="USD">Clique em listar moedas</option>
             </select>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="field-converted-amount">
             <label for="convertedAmount">Resultado: </label>
-            <input type="input" id="convertedAmount" readonly>
+            <input type="input" id="convertedAmount" class="input-format" readonly>
         </fieldset>
 
         <div id="message"></div>
 
-        <button onclick="loadCurrencies()">Listar moedas</button>
-        <button onclick="loadCurrencyRates()">Pegar taxas</button>
-        <button onclick="convertCurrency()">Converter</button>
+        <div class="button-area">
+            
+            <button onclick="loadCurrencies()" class="list-button">Listar moedas</button>
+            <button onclick="loadCurrencyRates()" class="rate-button">Pegar taxas</button>
+            <button onclick="convertCurrency()" class="convert-button">Converter</button>
 
-    </div>
+        </div>
+
+    </main>
+
+    <footer>
+        UFOPA@2024 - BCC/BSI - Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
