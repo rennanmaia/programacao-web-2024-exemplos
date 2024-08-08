@@ -1,3 +1,4 @@
 <?php
 
-echo "Olá\nSeja bem vindo\n";
+echo "Ola\nSeja bem vindo\n";
+echo nl2br("Ola\nSeja bem vindo\n");
